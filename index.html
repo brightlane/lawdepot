@@ -1,1 +1,106 @@
-lawdepot
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Legal Templates Online – Wills, POA, NDA & Contracts</title>
+
+<meta name="description" content="Create legal documents online including wills, power of attorney, NDAs, lease agreements, and contracts.">
+
+<link rel="canonical" href="https://brightlane.github.io/lawdepot/">
+
+<style>
+body {font-family: Arial, sans-serif; max-width:1000px; margin:auto; padding:20px;}
+h1,h2,h3 {color:#003366;}
+.cta-box {background:#ffeb3b; padding:20px; margin:20px 0; border-radius:6px; text-align:center;}
+.cta-button {background:#003366; color:white; padding:12px 24px; border-radius:5px; display:inline-block;}
+.tip-box {background:#e3f2fd; padding:15px; border-radius:6px; margin:20px 0;}
+.highlight {border-left:5px solid green; padding-left:10px;}
+</style>
+
+</head>
+
+<body>
+
+<h1>Legal Templates Online – Wills, POA, NDA & Contracts</h1>
+
+<p><strong>Today's Date:</strong> <span id="date"></span></p>
+
+<div class="tip-box">
+<h3>💡 Tip of the Day</h3>
+<p id="tip"></p>
+</div>
+
+<!-- DOCUMENT OF THE DAY -->
+<div class="cta-box">
+<h2>🔥 Document of the Day</h2>
+<p id="doc-text"></p>
+<a id="doc-link" href="#" class="cta-button">Start Now</a>
+</div>
+
+<!-- USA (Highlighted First) -->
+<h2 class="highlight">🇺🇸 USA Legal Templates</h2>
+<p>Most popular legal documents in the United States include wills, power of attorney, and lease agreements.</p>
+
+<ul>
+<li><a href="https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink" rel="nofollow sponsored">Create a Last Will</a></li>
+<li><a href="https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink" rel="nofollow sponsored">Start Power of Attorney</a></li>
+<li><a href="https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink" rel="nofollow sponsored">Build Lease Agreement</a></li>
+</ul>
+
+<!-- OTHER COUNTRIES -->
+<h2>Canada, UK & Australia</h2>
+<p>Legal templates are also available for Canada, the UK, and Australia including contracts, NDAs, and employment agreements.</p>
+
+<!-- HOW TO -->
+<h2>How It Works</h2>
+<ol>
+<li>Choose your legal document</li>
+<li>Answer a few simple questions</li>
+<li>Download and sign your document</li>
+</ol>
+
+<!-- TRUST -->
+<h2>About This Site</h2>
+<p>This website provides educational information about legal templates.</p>
+<p><strong>Disclaimer:</strong> Not legal advice.</p>
+
+<footer>
+<p>&copy; 2026 BrightLane</p>
+</footer>
+
+<script>
+// DATE
+const today = new Date();
+document.getElementById("date").textContent = today.toDateString();
+
+// TIPS
+const tips = [
+"Update your will after major life changes.",
+"Always review contracts before signing.",
+"Keep legal copies stored safely.",
+"Ensure all parties sign documents properly.",
+"Use clear language in agreements.",
+"Check local laws for document validity."
+];
+
+document.getElementById("tip").textContent =
+tips[today.getDate() % tips.length];
+
+// DOCUMENT OF THE DAY
+const docs = [
+{title:"Create Your Last Will", link:"https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink"},
+{title:"Start a Power of Attorney", link:"https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink"},
+{title:"Build a Lease Agreement", link:"https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink"},
+{title:"Create an NDA", link:"https://www.lawdepot.com/?pid=pg-TDCQSUQU4U-generaltextlink"}
+];
+
+const doc = docs[today.getDate() % docs.length];
+
+document.getElementById("doc-text").textContent = doc.title;
+document.getElementById("doc-link").href = doc.link;
+</script>
+
+</body>
+</html>
